@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Doutores da Web</title>
+    <link rel="stylesheet" href="biblioteca/nivoslider/themes/default/default.css">
+    <link rel="stylesheet" href="biblioteca/slicknav/dist/slicknav.css">
+    <link rel="stylesheet" href="biblioteca/nivoslider/nivo-slider.css">
+    <link rel="stylesheet" href="biblioteca/reset.css">
+    <link rel="stylesheet" href="biblioteca/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="bg-blue">
+            <div class="number wrapper">
+                <span>11 1234-1234 &nbsp;</span>
+                <span>11 1234-1234</span>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="imagens/test-logo.png" alt="Logo de teste">
+            </div>
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Empresa</a>
+                        <ul class="relative">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 1</a>
+                                <ul class="absolute">
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="bg-gray">
+            <div class="wrapper">
+                <div id="slider" class="nivoSlider">
+                    <img src="imagens/rio.jpg" alt="Imagem de um rio">
+                    <img src="imagens/sol.jpg" alt="Foto do sol">
+                </div>
+            </div>
+        </section>
+        <section class="bg-white">
+            <article class="wrapper">
+                <div class="flex-article">
+                    <div class="text-article">
+                        <h1 class="h1">Teste de Html e css</h1>
+                        <br>
+                        <h2 class="h2">Quesitos de Avaliação</h2>
+                        <br>
+                        <ul class="list-test">
+                            <li>Organização do código (quanto mais limpo melhor)</li>
+                            <li>Nível de Detalhismo (quanto mais idêntico melhor)</li>
+                            <li>Tempo de desenvolvimento (seja sicenro ao enviar o tempo gasto);</li>
+                            <li>Ao finalizar o teste, envie zipado o código para o e-mail com o tempo gasto e seu cv
+                                anexado.</li>
+                        </ul>
+                        <br>
+                        <h2 class="h2">Obrigada e boa sorte!</h2>
+                    </div>
+                    <img src="imagens/sailor.jpg" alt="Usagi Tsukino" class="usagi-article">
+                </div>
+            </article>
+        </section>
+        <section class="boxes-destaque">
+            <div class="wrapper">
+                <h1 class="h1">
+                    boxes de destaque
+                </h1>
+                <div class="container-flex">
+                    <div>
+                        <a href="#">
+                            <img src="imagens/sailor2.jpg" alt="">
+                            Usagi Tsukino
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="imagens/sailor3.jpg" alt="">
+                            Usagi Tsukino
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="imagens/sailor4.jpg" alt="">
+                            Usagi Tsukino
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="imagens/sailor5.jpg" alt="">
+                            Usagi Tsukino
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray">
+        <div class="wrapper">
+            <div class="footer">
+                <a href="#">Home</a>
+                <a href="#">Empresa</a>
+                <a href="#">Clientes</a>
+                <a href="#">Contato</a>
+                <h2 class="h2">Rodapé</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="biblioteca/nivoslider/jquery.nivo.slider.js"></script>
+    <script src="biblioteca/slicknav/jquery.slicknav.js"></script>
+    <script>
+        $(function () {
+            $('#menu').slicknav();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('#slider').nivoSlider();
+    </script>
+
+
+</body>
+
+</html>
